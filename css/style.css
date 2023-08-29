@@ -24,3 +24,9 @@ header{
   background-color: var(--bg-hero);
   height: 500px;
 }
+
+/* ABOUT */
+.container-custom{
+  width: 80%;
+  margin: 0 auto;
+}
