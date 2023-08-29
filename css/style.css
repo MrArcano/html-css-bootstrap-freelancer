@@ -21,8 +21,8 @@ header{
 
 /* HERO */
 .hero-custom{
-  background-color: var(--bg-hero);
   height: 500px;
+  background-color: var(--bg-hero);
 }
 
 /* ABOUT */
