@@ -30,3 +30,18 @@ header{
   width: 80%;
   margin: 0 auto;
 }
+
+.bg-about{
+  background-color: var(--bg-hero);
+}
+
+/* FOOTER */
+/* info */
+.bg-info-link{
+  background-color: var(--bg-info);
+}
+/* copyright */
+
+.bg-footer{
+  background-color: var(--bg-footer);
+}
