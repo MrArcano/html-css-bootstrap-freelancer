@@ -4,6 +4,7 @@
   --bg-navy: #3a546d;
 
   --text-dark-grey: #333333;
+  --text-dark-navy: #2c3e50;
 }
 
 body{
@@ -36,6 +37,14 @@ body *{
 
 .bg-emerald{
   background-color: var(--bg-emerald);
+}
+
+.text-dark-grey{
+  color: var(--text-dark-grey);
+}
+
+.text-dark-navy{
+  color: var(--text-dark-navy);
 }
 
 /* link navbar */
@@ -78,7 +87,7 @@ body *{
   left: calc(50% + 32px);
 
   border-radius: 4px;
-  background-color: white;
+  background-color: currentColor;
 }
 
 .star::after{
@@ -92,7 +101,7 @@ body *{
   right: calc(50% + 32px);
 
   border-radius: 4px;
-  background-color: white;
+  background-color: currentColor;
 }
 /* end star separator */
 /* ---------------------------------------- */
