@@ -107,10 +107,6 @@ body *{
 /* end star separator */
 /* ---------------------------------------- */
 
-.btn-outline-custom:hover{
-  
-}
-
 /* -------------------------------------- */
 
 /* HEADER */
@@ -132,8 +128,9 @@ header{
 
 .btn-custom{
   background-color: var(--bg-emerald);
+  border: none;
 }
 
 .btn-custom:hover{
-  background-color: rgba(26, 188, 156, 0.8);
+  background-color: #006b64;
 }
