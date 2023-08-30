@@ -13,6 +13,11 @@ body{
   color: white;
 }
 
+html {
+  scroll-padding-top: var(--dim-header);
+  scroll-behavior: smooth;
+}
+
 /* -------------------------------------- */
 
 /* UTILITY */
