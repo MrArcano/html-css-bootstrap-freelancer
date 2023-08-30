@@ -8,9 +8,9 @@
 /* DEBUG */
 /* -------------------------------------- */
 .container,.row,.col{
-  border: 1px solid black;
+  /* border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: white; */
 }
 /* -------------------------------------- */
 
@@ -28,6 +28,27 @@
   background-color: var(--bg-emerald);
 }
 
+/* logo navbar */
+.navbar-brand-custom{
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-brand-custom:hover{
+  color: white;
+}
+
+/* link navbar */
+.nav-link-custom{
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link-custom:hover{
+  color: var(--bg-emerald);
+}
+
+/* input text border & padding */
 .form-control-custom{
   border-top: none;
   border-left: none;
