@@ -16,34 +16,36 @@
 <body>
 
   <!-- HEADER -->
-  <header>
-    <!-- nav bar -->
+  <header class="bg-dark-navy ">
     <div class="container h-100">
-      <div class="row align-items-center h-100 ">
-
-        <!-- logo -->
-        <div class="col">LOGO</div>
-
-        <!-- hamburger menu -->
-        <div class="col d-md-none text-end">HM</div>
-
-        <!-- menu -->
-        <nav class="col d-none d-md-block text-end h-100">
-          <ul class="list-unstyled d-flex justify-content-end align-items-center h-100">
-            <li>
-              <a href="#" class="text-decoration-none ">PORTFOLIO</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none ">ABOUT</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none ">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- end menu -->
-
-      </div>
+      <!-- navbar bootstrap -->
+      <nav class="navbar navbar-expand-lg h-100">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+          <!-- hamburger menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- menu -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end menu -->
+        </div>
+        <!-- end container fluid -->
+      </nav>
+      <!-- end navbar -->
     </div>
   </header>
 
@@ -51,7 +53,7 @@
   <main>
 
     <!-- section hero -->
-    <section class="hero-custom text-center">
+    <section class="hero-custom bg-emerald text-center py-5">
       <div class="container h-100 ">
         <div class="row row-cols-1 align-items-center h-100 ">
           <div class="col">IMAGE</div>
@@ -61,46 +63,84 @@
     </section>
 
     <!-- section portfolio -->
-    <section class="text-center">
-    <div class="container">
-      <h2>PORTFOLIO</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 ">
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
-        <div class="col">4</div>
-        <div class="col">5</div>
-        <div class="col">6</div>
+    <section class="text-center py-5">
+      <div class="container">
+        <h2>PORTFOLIO</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+          <div class="col">4</div>
+          <div class="col">5</div>
+          <div class="col">6</div>
+        </div>
       </div>
-    </div>
     </section>
 
     <!-- section about -->
-    <section class="bg-about text-center">
+    <section class="bg-emerald text-center py-5">
       <div class="container">
         <div class="container-custom">
-          <h2>ABOUT</h2>
-          <div class="row row-cols-1 row-cols-md-2">
-            <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At pariatur facere sit alias molestiae minima fugit vero totam veritatis illo!</div>
-            <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At pariatur facere sit alias molestiae minima fugit vero totam veritatis illo!</div>
+          <div class="container-fluid">
+            <h2>ABOUT</h2>
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At pariatur facere sit alias molestiae minima fugit vero totam veritatis illo!</div>
+              <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At pariatur facere sit alias molestiae minima fugit vero totam veritatis illo!</div>
+            </div>
+            <div>BUTTON</div>
           </div>
-          <div>BUTTON</div>
         </div>
       </div>
     </section>
 
     <!-- section contact-me -->
-    <section>
+    <section class="py-5">
       <div class="container">
         <div class="container-custom">
           <h2 class="text-center">CONTACT ME</h2>
-          <div class="row row-cols-1">
-            <div class="col">Name</div>
-            <div class="col">Email Address</div>
-            <div class="col">Phone Number</div>
-            <div class="col">Message</div>
-            <div class="col">Send</div>
-          </div>
+
+          <!-- FORM -->
+          <form action="#" method="post">
+            <input 
+              type="text" 
+              class="form-control form-control-custom py-2" 
+              name="name" 
+              id="name" 
+              placeholder="Nome"
+            >
+
+            <input 
+              type="email" 
+              class="form-control form-control-custom py-2" 
+              name="email" 
+              id="email" 
+              placeholder="Email Address"
+            >
+
+            <input 
+              type="text" 
+              class="form-control form-control-custom py-2"
+              name="phone-number" 
+              id="phone-number" 
+              placeholder="Phone Number"
+            >
+
+            <textarea 
+              class="form-control form-control-custom py-2"
+              name="message" 
+              id="message" 
+              rows="4" 
+              placeholder="Message"
+            ></textarea>
+
+            <button 
+              type="submit" 
+              class="btn btn-custom mt-2"
+            >Send</button>
+
+          </form>
+          <!-- end FORM -->
+
         </div>
       </div>
     </section>
@@ -111,7 +151,7 @@
   <footer>
 
     <!-- info -link -->
-    <section class="bg-info-link text-center">
+    <section class="bg-navy text-center py-5">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
           <div class="col">1</div>
@@ -122,7 +162,7 @@
     </section>
 
     <!-- copyright -->
-    <section class="bg-footer text-center">
+    <section class="bg-dark-navy text-center py-5">
       <div class="container">
         <span class="text-capitalize">copyright</span>
       </div>
