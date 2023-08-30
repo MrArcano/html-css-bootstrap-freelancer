@@ -6,6 +6,10 @@
   --text-dark-grey: #333333;
 }
 
+body{
+  color: white;
+}
+
 
 /* DEBUG */
 /* -------------------------------------- */
@@ -17,7 +21,6 @@
 body *{
   border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.2);
-  color: white;
 }
 /* -------------------------------------- */
 
@@ -35,23 +38,9 @@ body *{
   background-color: var(--bg-emerald);
 }
 
-/* logo navbar */
-.navbar-brand-custom{
-  color: white;
-  font-weight: bold;
-  font-size: 1.7rem;
-}
-
-.navbar-brand-custom:hover{
-  color: white;
-}
-
 /* link navbar */
 .nav-link-custom{
   color: white;
-  font-weight: bold;
-  font-size: 1.1rem;
-  
 }
 
 .nav-link-custom:hover{
@@ -70,6 +59,44 @@ body *{
 .form-control-custom::placeholder{
   color: var(--text-dark-grey);
 }
+
+/* star separator */
+/* ---------------------------------------- */
+.star{
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.star::before{
+  content: "";
+
+  width: 10%;
+  height: 4px;
+  
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(50% + 32px);
+
+  border-radius: 4px;
+  background-color: white;
+}
+
+.star::after{
+  content: "";
+
+  width: 10%;
+  height: 4px;
+  
+  position: absolute;
+  top: calc(50% - 2px);
+  right: calc(50% + 32px);
+
+  border-radius: 4px;
+  background-color: white;
+}
+/* end star separator */
+/* ---------------------------------------- */
+
 /* -------------------------------------- */
 
 /* HEADER */
@@ -78,10 +105,6 @@ header{
 }
 
 /* HERO */
-.hero-custom{
-  height: 500px; /* debug */
-}
-
 .hero-custom .image-custom{
   width: 250px;
   margin: 0 auto;
@@ -90,7 +113,7 @@ header{
 /* ABOUT */
 .container-custom{
   width: 80%;
-  margin:s 0 auto;
+  margin: 0 auto;
 }
 
 .btn-custom{
