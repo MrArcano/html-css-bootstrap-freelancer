@@ -5,6 +5,8 @@
 
   --text-dark-grey: #333333;
   --text-dark-navy: #2c3e50;
+
+  --dim-header: 90px;
 }
 
 body{
@@ -95,17 +97,26 @@ body{
 /* end star separator */
 /* ---------------------------------------- */
 
+.debug *{
+  border: 1px solid black;
+}
+
 /* -------------------------------------- */
 
 /* HEADER */
 header{
-  height: 90px;
+  height: var(--dim-header);
+}
+
+.navbar-toggler-custom{
+  border-color: white;
 }
 
 /* HERO */
 .hero-custom .image-custom{
   width: 250px;
   margin: 0 auto;
+  margin-top: var(--dim-header);
 }
 
 /* ABOUT */
