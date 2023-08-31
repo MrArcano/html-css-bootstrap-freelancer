@@ -65,6 +65,10 @@ html {
   color: var(--text-dark-grey);
 }
 
+.form-control-custom:focus{
+  box-shadow: none;
+}
+
 /* star separator */
 /* ---------------------------------------- */
 .star{
@@ -72,21 +76,25 @@ html {
   font-size: 1.4rem;
 }
 
-.star::before{
+.star::before,
+.star::after{
   content: "";
 
   width: 10%;
   height: 4px;
-  
-  position: absolute;
-  top: calc(50% - 2px);
-  left: calc(50% + 32px);
-
   border-radius: 4px;
   background-color: currentColor;
+  
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.star::after{
+.fa-star{
+  vertical-align: middle;
+  margin: 0 1%;
+}
+
+/* .star::after{
   content: "";
 
   width: 10%;
@@ -98,7 +106,7 @@ html {
 
   border-radius: 4px;
   background-color: currentColor;
-}
+} */
 /* end star separator */
 /* ---------------------------------------- */
 
